@@ -36,7 +36,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3" // compatible with Kotlin 1.9.20
+        kotlinCompilerExtensionVersion = "1.5.3"
     }
 }
 
@@ -59,4 +59,7 @@ android {
 
     // Google Sign-In
     implementation("com.google.android.gms:play-services-auth:20.7.0")
-}
+        implementation(libs.androidx.material3.android)
+        implementation("androidx.biometric:biometric:1.1.0")
+
+    }
